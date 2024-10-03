@@ -33,7 +33,8 @@ from sklearn.preprocessing import LabelEncoder
 le=LabelEncoder()
 data["salary"]=le.fit_transform(data["salary"])
 data.head()
-x=data[['satisfaction_level','last_evaluation','number_project','average_montly_hours','time_spend_company','Work_accident','left','promotion_last_5years']]
+x=data[['satisfaction_level','last_evaluation','number_project','average_montly_hours',
+'time_spend_company','Work_accident','left','promotion_last_5years']]
 x.head()
 y=data[['left']]
 y.head()
